@@ -1,0 +1,148 @@
+.Dialog {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Dialog__content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    position: absolute;
+    left:30%
+  }
+  
+  .Dialog__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .Dialog__button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .Dialog__button--cancel {
+    background-color: #6c757d;
+  }
+
+  .panel {
+    background-color: #ddd4d4;
+    border: 5px solid #686565;
+    border-radius: 50px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .panel p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+  }
+  .New{
+    background-color: #a9c9bc;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 0px;
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  
+.button-88-red {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgb(235, 53, 21) 0%, rgb(202, 111, 88) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #ff280298;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-88-red:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #d81a1a98;
+}
+
+.button-88-red:active {
+  box-shadow: 0 0.3em 1em -0.5em #f30f0798;
+}
+
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.Spacing_btw{
+  display: flex;
+  gap: 140px;
+}
+.New h2{
+  text-align: center;
+  font-family: "Franklin Gothic Medium";
+}
+.Scroll {
+  height: 400px; /* set a fixed height for the container */
+  overflow-y: auto; /* add scroll when the content exceeds the height */
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.Scroll::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.Scroll::-webkit-scrollbar-thumb {
+  background-color: #976565;
+  border-radius: 5px;
+}

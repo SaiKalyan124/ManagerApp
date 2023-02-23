@@ -1,0 +1,90 @@
+.Main_todo{
+    background: #209cee;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-list {
+    background: #ddd4d4;
+    border-radius: 50px;
+    max-width: 100%;
+    padding: 20px;    
+    margin-top: 20px;
+    overflow-y: auto;
+  }
+  
+  .todo {
+    align-items: center;
+    background: #fff;
+    border-radius:10x;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    font-size: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px 80px;
+    min-height: 50px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .todo button {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  .button-88-red {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0.5em 1.2em 0.5em 1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgb(235, 53, 21) 0%, rgb(202, 111, 88) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #ff280298;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-88-red:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #d81a1a98;
+  }
+  
+  .button-88-red:active {
+    box-shadow: 0 0.3em 1em -0.5em #f30f0798;
+  }
+  .button-88 {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.5em 1.2em 0.5em 1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-88:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  }
+  
+  .button-88:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+  }
