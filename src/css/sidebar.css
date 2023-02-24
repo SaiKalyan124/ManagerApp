@@ -99,10 +99,19 @@ input {
 .Paper{
   display: flex;
   height: 750px;
-  width: 600px;
+  width: 500px;
   position: absolute;
   left: 26%;
   overflow: scroll;
+  background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: black;
+  
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 20%;
+}
+.Paper h2{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .button-88 {
   display: flex;

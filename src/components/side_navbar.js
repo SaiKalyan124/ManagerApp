@@ -4,8 +4,16 @@ import Main_todo from "../pages/Todos";
 import 'react-calendar/dist/Calendar.css';
 import EmployeeCalendar from "../pages/Calender";
 import Dialog_Box from "../pages/dialog";
-
-
+import {
+  CDBSidebar,
+  CDBSidebarContent,
+  CDBSidebarFooter,
+  CDBSidebarHeader,
+  CDBSidebarMenu,
+  CDBSidebarMenuItem,
+  
+  } from 'cdbreact';
+  import {MDBIcon} from 'mdb-react-ui-kit';
 export default function SideNavbar({ selectedEmployee }) {
   const [showActionItems, setShowActionItems] = useState(false);
   const [showCalender, setShowCalender] = useState(false);
@@ -62,31 +70,63 @@ export default function SideNavbar({ selectedEmployee }) {
 
 
 
-  if (formData){
   return (
-    <div>
-      <div className="buttons">
-        <div>
-          <button id="Action_items_button" onClick={() => handleActionButtonClick("Action_items_button")}>
-            Action Items
-          </button>
+    <>
+      <div style={{ display: 'flex', height: '100vh' }}>
+        <div >
+        <div className="sideNavbar">
+            <CDBSidebar textColor="black" backgroundColor="white">
+              <CDBSidebarHeader style={{height:'77px',backgroundColor:'black'}}prefix={<i className="fa fa-bars fa-large"></i>}>
+                <a href="/" className="text-decoration-none" style={{ color: 'White', fontSize: '26px' }}>
+                  Nirvana
+                  
+                </a>
+                
+              </CDBSidebarHeader>
+                    <button style={{ textAlign: 'left' }}
+                    className="sidebar-button"
+                      id="Action_items_button"
+                      onClick={() => handleActionButtonClick("Action_items_button")}
+                    >
+                      <h3><MDBIcon fas icon="clipboard-check" />Action Items</h3>
+                    </button >
+                    <button style={{ textAlign: 'left' }} className="sidebar-button" id="Calendar_button" onClick={() => handleCalenderButtonClick("Calendar_button")}>
+                      
+                      <h3><MDBIcon fas icon="calendar-alt" />Calendar</h3>
+                    </button>
+                    <button style={{ textAlign: 'left' }} className="sidebar-button" id="Form_button" onClick={() => handleFormButtonClick("Form_button")}>
+                      
+                      <h3><MDBIcon fas icon="edit" />Form</h3>
+                    </button>
+              <div className="Footer">
+              <CDBSidebarFooter style={{ textAlign: 'left' }}>
+                <div style={{ padding: '20px 5px' }}>
+                  <h4>
+                  <button style={{ textAlign: 'left' }} className="sidebar-button" id="Form_button" >
+                      
+                      <h3><MDBIcon fas icon="bell" />Reminders</h3>
+                    </button>
+                  </h4>
+                  <h4>
+                  <button style={{ textAlign: 'left' }} className="sidebar-button" id="Form_button" >
+                      
+                      <h3><MDBIcon fas icon="comments" />Messages</h3>
+                    </button>
+                  </h4>
+                  
+                <h3><MDBIcon far icon="grin-alt" />
+                Pavan Badam
+                </h3></div>
+              </CDBSidebarFooter></div>
+            </CDBSidebar>
+          </div>
         </div>
-        <div>
-          <button id="Calendar_button" onClick={() => handleCalenderButtonClick("Calendar_button")}>
-            Calendar
-          </button>
-        </div>
-        <div>
-          <button id="Form_button" onClick={() => handleFormButtonClick("Form_button")}>
-            Form
-          </button>
+        <div className="content-container" >
+          {showActionItems && <Main_todo />}
+          {showCalender && <EmployeeCalendar />}
+          {showForm && <Dialog_Box selectedEmployee={selectedEmployee}/>}
         </div>
       </div>
-      <div className="calendar-container">
-        {showActionItems && <Main_todo />}
-        {showCalender && <EmployeeCalendar />}
-        {showForm && <Dialog_Box selectedEmployee={selectedEmployee}/>}
-      </div>
-    </div>
+    </>
   );
-}}
+};

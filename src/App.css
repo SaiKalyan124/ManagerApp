@@ -55,19 +55,26 @@ span {
 }
 
 .header {
-  padding: 20px;
-  text-align: center;
-  background: #8CCFC3;
-  font-size: 40px;
-  font-family: 'Roboto', sans-serif; /* change font family to desired font */
-  text-shadow: 1px 1px 0px #000000,
-               1px 2px 0px #382f2f,
-               1px 3px 0px #020202,
+  text-align: Center;
+  background: #ffffff;
+  font-size: 60px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* change font family to desired font */
+  text-shadow: 1px 1px 0px #c4c1c1,
+               1px 2px 0px #d4d1d1,
+               1px 3px 0px #d1c7c7,
                1px 4px 0px #108bdd,
                1px 5px 0px #108bdd,
-               1px 6px 0px #000000,
-               1px 10px 5px rgba(0, 0, 0, 0.5),
-               1px 15px 10px rgba(0, 0, 0, 0.4),
-               1px 20px 30px rgba(0, 0, 0, 0.3),
-               1px 25px 50px rgba(0, 0, 0, 0.2);
+               1px 6px 0px #e2dada,
+               1px 10px 5px rgba(184, 176, 176, 0.5),
+               1px 15px 10px rgba(252, 247, 247, 0.4),
+               1px 20px 30px rgba(240, 238, 238, 0.3),
+               1px 25px 50px rgba(233, 227, 227, 0.2);
+}
+.header h1{
+  color: black;
+  font-size: 20p;
+}
+.Main{
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
 }

@@ -11,7 +11,7 @@ function Todo({ todo, index, completeTodo , removeTodo}) {
       >
         {todo.text}
         <div>
-          <button class="button-88" onClick={() => completeTodo(index)}>Complete</button>
+          <button class="button-33" onClick={() => completeTodo(index)}>Complete</button>
           <button class="button-88-red" onClick={() => removeTodo(index)}>x</button>
         </div>
       </div>
@@ -97,7 +97,9 @@ export default function Main_todo(){
     
     return (
         <div className="app Action-items">
+          
         <div className="todo-list">
+        <h2>Action Items</h2>
           {todos.map((todo, index) => (
             <Todo
               key={index}

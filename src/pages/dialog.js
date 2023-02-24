@@ -2,6 +2,9 @@ import React, { useState,useEffect } from "react";
 import OneOnOneForm from "./1-1Form";
 import "./../css/Form.css";
 
+import "./../css/side_Navbar.css";
+import { Button } from "semantic-ui-react";
+
 export default function Dialog_Box({selectedEmployee}) {
   const [showForm, setShowForm] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
@@ -30,8 +33,11 @@ export default function Dialog_Box({selectedEmployee}) {
   
   return (
     <>
-    <form>
+    
+    <form className="Form"> 
+    
     <div>
+      
       {showForm ? (
         <OneOnOneForm onClose={handleClose} />
       ) : (
@@ -39,23 +45,31 @@ export default function Dialog_Box({selectedEmployee}) {
           
           <div className="panel">
           <div className="Scroll">
-          {/* display the data if 1-1's exists in db */}
+          <h3>1-1's</h3>
           {data && data.length > 0 ? (
+            
                 data.map((data) => (
-
+                    
                 <div key={data.timestamp}>
-                  <p>Wins: {data.wins || ''}</p>
-                  <p>Concerns: {data.concerns || ''}</p>
+                  {/* <p>Wins: {data.wins || ''}</p> */}
+                  {/* <p>Concerns: {data.concerns || ''}</p>
                   <p>Sentiment: {data.sentiment || ''}</p>
                   <p>Constructive self-feedback: {data.constructive_selfFeedback || ''}</p>
                   <p>Constructive feedback for manager: {data.constructive_FeedbackForManager || ''}</p>
                   <p>Positive self-feedback: {data.positive_selfFeedback || ''}</p>
                   <p>Positive feedback for manager: {data.positive_FeedbackForManager || ''}</p>
                   <p>Actions items for team member: {data.actions_items_for_team_member && data.actions_items_for_team_member.length ? data.actions_items_for_team_member.map((action) => action.label).join(', ') : ''}</p>
-                  <p>Actions items for manager: {data.actions_items_for_Manager && data.actions_items_for_Manager.length ? data.actions_items_for_Manager.map((action) => action.label).join(', ') : ''}</p>
-                  <p>Timestamp: {data.timestamp ? data.timestamp.toString() : ''}</p>
+                  <p>Actions items for manager: {data.actions_items_for_Manager && data.actions_items_for_Manager.length ? data.actions_items_for_Manager.map((action) => action.label).join(', ') : ''}</p> */}
+                  
+                  <button className="timeStampButton">
+                    
+                    <p>Timestamp: {data.timestamp ? data.timestamp.toString() : ''}</p>
+                    
+                    </button><br/><br/>
                 </div>
-              ))):(<p>No Previous One on One</p>
+              ))):(
+              
+              <p>No Previous One on One</p>
               
               )}
                   </div>     

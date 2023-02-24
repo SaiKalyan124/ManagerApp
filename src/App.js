@@ -52,13 +52,16 @@ const Main = () => {
 
   return (
     <>
-      { header()}
+    <div className='Main'>
+      {/* { header()} */}
       <Navbar manager={manager}/>
       <Routes>
           <Route path="/devX" element={<DevX />} />
           <Route path="/Delivery" element={<Delivery />} />
           <Route path="/Platform_Services" element={<Platform_Services />} />       
       </Routes> 
+      
+    </div>
   </>
   );
 };

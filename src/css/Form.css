@@ -5,18 +5,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(168, 47, 47, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .Dialog__content {
-    background-color: #fff;
     padding: 20px;
     border-radius: 4px;
     position: absolute;
     left:30%
+  }
+  .Dialog__content h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   .Dialog__buttons {
@@ -41,10 +43,8 @@
   }
 
   .panel {
-    background-color: #ddd4d4;
-    border: 5px solid #686565;
-    border-radius: 50px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    border: 5px solid #f7f2f2;
     padding: 20px;
     margin: 10px;
     width: 400px;
@@ -58,8 +58,8 @@
     margin: 0 0 10px;
   }
   .New{
-    background-color: #a9c9bc;
-    border-radius: 50px;
+    background-color: #ebeef0;
+    border-radius: 20px;
     padding: 20px;
     margin: 0px;
     width: 400px;
@@ -143,6 +143,16 @@
 }
 
 .Scroll::-webkit-scrollbar-thumb {
-  background-color: #976565;
+  background-color: #e0d3d3;
   border-radius: 5px;
+}
+
+.timeStampButton{
+  background-color: #ebeef0;
+  border: none;
+  width: 350px;
+  border-radius: 10px;
+  font-family: Arial;
+  justify-content: space-between;
+  
 }

@@ -184,8 +184,8 @@ export default function OneOnOneForm() {
         <>
         {/* <page> */}
         {/* css in sidebar.css */}
-        <Paper  className='Paper'>
-      <div>
+      <Paper  className='Paper'>
+      <div >
         <br/>
         <form onSubmit={handleSubmit}>
         

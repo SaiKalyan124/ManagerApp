@@ -32,10 +32,9 @@ export default function Navbar({manager }){
     
           {
           showEmployeeNavbar && (
-              <nav className="nav2 show-nav2">
-                <EmployeesInfo manager={manager} setSelectedEmployee={setselectedEmployee}/ >
-                
-              </nav>
+            <nav className={`nav2 ${showEmployeeNavbar ? 'show-nav2' : ''}`}>
+            <EmployeesInfo manager={manager} setSelectedEmployee={setselectedEmployee}/>
+          </nav>
               
             )
             }
